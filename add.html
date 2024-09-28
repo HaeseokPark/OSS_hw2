@@ -78,6 +78,15 @@
         <label for="quantity">수량:</label>
         <input type="number" id="quantity" required>
 
+        <label for="purchaseDate">구매일:</label>
+        <input type="date" id="purchaseDate" name="purchaseDate" required><br><br>
+
+        <label for="stockStatus">재고 상태:</label>
+        <select id="stockStatus" name="stockStatus" required>
+            <option value="재고 있음">재고 있음</option>
+            <option value="재고 없음">재고 없음</option>
+        </select><br><br>
+
         <button type="submit">확인</button>
         <button type="button" onclick="location.href='index.html'">취소</button>
     </form>
