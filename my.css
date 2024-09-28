@@ -2,27 +2,35 @@
 
 /* 공통 스타일 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f7fa;
+    color: #333;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #2c3e50;
+    margin: 20px 0;
+    font-size: 2.5em;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #3498db;
     color: #fff;
     border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 /* 테이블 스타일 */
@@ -33,23 +41,41 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #e5e5e5;
+    padding: 12px;
     text-align: center;
 }
 
 th {
-    background-color: #007bff;
+    background-color: #3498db;
     color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* 카드 스타일 */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
 }
 
 /* 반응형 스타일 */
 @media (max-width: 768px) {
     h1 {
-        font-size: 24px;
+        font-size: 2em;
     }
 
-    .product-details {
+    .product-card {
         padding: 15px;
     }
 
@@ -65,10 +91,10 @@ th {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 20px;
+        font-size: 1.5em;
     }
 
-    .product-details {
+    .product-card {
         padding: 10px;
     }
 
